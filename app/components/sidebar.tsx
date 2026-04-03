@@ -4,8 +4,7 @@ import { Settings } from "lucide-react";
 import Link from "next/link";
 
 const navItems = [
-  { name: "Users", href: "/name" },
-  { name: "Email", href: "/email" },
+  { name: "Users", href: "/user" },
   { name: "Leaderboard", href: "/leaderboard" },
 ];
 
