@@ -6,6 +6,7 @@ import Link from "next/link";
 const navItems = [
   { name: "Users", href: "/user" },
   { name: "Leaderboard", href: "/leaderboard" },
+  { name: "Courses", href: "/courses" },
 ];
 
 const Sidebar = () => {
