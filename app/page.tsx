@@ -4,7 +4,7 @@ import Sidebar from "./components/sidebar";
 export default function Home() {
   return (
     <div className="flex font-sans">
-      <Sidebar />
+    
     </div>
   );
 }
