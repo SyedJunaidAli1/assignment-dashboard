@@ -25,17 +25,14 @@ const Sidebar = () => {
   return (
     <div
       className={`${
-        collapsed ? "w-20" : "w-60"
+        collapsed ? "w-12" : "w-60"
       } min-h-screen border-r flex flex-col justify-between transition-all duration-300`}
     >
       <div>
-        <div className="flex items-center justify-between px-4 py-4">
+        <div className="flex items-center justify-between px-3 py-4">
           {!collapsed && <h1 className="text-lg font-bold">Demo</h1>}
 
-          <button
-            onClick={() => setCollapsed(!collapsed)}
-            className="px-2.5 rounded"
-          >
+          <button onClick={() => setCollapsed(!collapsed)} className=" rounded">
             {collapsed ? (
               <PanelLeftOpen size={20} />
             ) : (
@@ -44,7 +41,7 @@ const Sidebar = () => {
           </button>
         </div>
 
-        <nav className="flex flex-col gap-1 px-2">
+        <nav className="flex flex-col gap-1">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             const Icon = item.icon;
@@ -70,7 +67,7 @@ const Sidebar = () => {
         </nav>
       </div>
 
-      <div className="p-3 border-t">
+      <div className="py-2 border-t">
         <button
           className={`flex items-center ${
             collapsed ? "justify-center" : "gap-3"
