@@ -26,7 +26,7 @@ const Sidebar = () => {
     <div
       className={`${
         collapsed ? "w-12" : "w-60"
-      } min-h-screen border-r flex flex-col justify-between transition-all duration-300`}
+      } min-h-screen border-r flex flex-col justify-between duration-300 ease-in-out`}
     >
       <div>
         <div className="flex items-center justify-between px-3 py-4">
