@@ -61,7 +61,9 @@ const Sidebar = () => {
               >
                 <Icon size={20} />
 
-                {!collapsed && <span>{item.name}</span>}
+                {!collapsed && (
+                  <span className="font-semibold">{item.name}</span>
+                )}
               </Link>
             );
           })}
