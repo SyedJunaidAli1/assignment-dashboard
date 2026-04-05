@@ -2,6 +2,13 @@
 
 import { useEffect, useState } from "react";
 
+interface Transaction {
+  id: number;
+  type: "income" | "expense";
+  amount: number;
+  date: string;
+}
+
 const Page = () => {
   const [transactions, setTransactions] = useState([]);
 
@@ -25,7 +32,6 @@ const Page = () => {
     <div className="p-6 min-h-screen w-fit mx-auto">
       <h1 className="text-2xl text-center font-bold mb-6">Dashboard</h1>
 
-      {/* Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         <div className=" p-4 rounded-xl shadow-sm">
           <p className="text-sm text-gray-500">Balance</p>
