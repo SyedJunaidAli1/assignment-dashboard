@@ -11,9 +11,11 @@ import {
   PanelLeftClose,
   PanelLeftOpen,
   BadgeEuro,
+  LayoutDashboard,
 } from "lucide-react";
 
 const navItems = [
+  { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
   { name: "Users", href: "/user", icon: Users },
   { name: "Leaderboard", href: "/leaderboard", icon: Trophy },
   { name: "Courses", href: "/courses", icon: BookOpen },
