@@ -34,7 +34,7 @@ const Page = () => {
     });
 
   return (
-    <div className="flex flex-col items-center mx-auto w-fit min-h-screen p-6">
+    <div className="mx-auto w-fit min-h-screen px-4 py-2">
       <h1 className="text-2xl font-bold mb-6">Transactions</h1>
 
       <div className="flex flex-col sm:flex-row gap-3 mb-6">
@@ -43,7 +43,7 @@ const Page = () => {
           placeholder="Search by category..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="px-4 py-2 border rounded-lg w-full sm:w-1/2 outline-none focus:ring-2 focus:ring-primary"
+          className="px-4 py-2 border rounded-lg w-full sm:w-fit outline-none focus:ring-2 focus:ring-primary"
         />
 
         <div className="flex gap-2">
