@@ -24,7 +24,7 @@ const Page = () => {
     };
     fetchData();
   }, []);
-  
+
   const filtered = transactions
     .filter((t) => t.category.toLowerCase().includes(search.toLowerCase()))
     .filter((t) => {
@@ -63,7 +63,7 @@ const Page = () => {
 
       <div className="rounded-xl shadow-sm overflow-hidden">
         <table className="w-full text-left">
-          <thead className="text-sm text-gray-600">
+          <thead className="text-sm ">
             <tr>
               <th className="p-3">Date</th>
               <th className="p-3">Category</th>
@@ -76,18 +76,16 @@ const Page = () => {
           <tbody>
             {filtered.map((t) => (
               <tr key={t.id} className="border-t  transition">
-                <td className="p-3 text-sm text-gray-500">{t.date}</td>
+                <td className="p-3 text-sm ">{t.date}</td>
 
                 <td className="p-3 font-medium">{t.category}</td>
 
-                <td className="p-3 text-sm text-gray-500">{t.description}</td>
+                <td className="p-3 text-sm">{t.description}</td>
 
                 <td className="p-3">
                   <span
                     className={`text-xs px-2 py-1 rounded-full ${
-                      t.type === "income"
-                        ? "bg-green-100 text-green-600"
-                        : "bg-red-100 text-red-600"
+                      t.type === "income" ? "bg-green-500" : "bg-red-500"
                     }`}
                   >
                     {t.type}
@@ -106,7 +104,6 @@ const Page = () => {
           </tbody>
         </table>
 
-        {/* Empty state */}
         {filtered.length === 0 && (
           <p className="text-center py-6 text-gray-500">
             No transactions found
