@@ -10,12 +10,14 @@ import {
   Settings,
   PanelLeftClose,
   PanelLeftOpen,
+  BadgeEuro,
 } from "lucide-react";
 
 const navItems = [
   { name: "Users", href: "/user", icon: Users },
   { name: "Leaderboard", href: "/leaderboard", icon: Trophy },
   { name: "Courses", href: "/courses", icon: BookOpen },
+  { name: "Transactions", href: "/transactions", icon: BadgeEuro },
 ];
 
 const Sidebar = () => {
